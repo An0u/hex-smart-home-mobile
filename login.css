@@ -1,0 +1,309 @@
+/* Global styles */
+*,
+*::after,
+*::before{
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-family: brandon-grotesque,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+  font-size: 10px;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color:#66727c;
+
+}
+p{
+  font-size: 1.6rem;
+}
+img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+section{
+  display: flex;
+  padding: auto 0;
+}
+body{
+  background-color:#d2deef;
+  font-size: 1.0625rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+   color:#66727c;
+  position: relative;
+}
+
+/* header{
+  background:url(assets/web-design-large-background.png) no-repeat;
+  display: block;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-size: 100% 100%;
+  background-size: cover;
+  height: 500px;
+
+} */
+header{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.avatar{
+  width: 30%;
+  height: auto;
+  border-radius: 20%;
+}
+#logo{
+  padding-top: 15px;;
+}
+.icon-middle{
+  top:50px;
+}
+figure{
+  display: flex;
+}
+.container1{
+  width:80%;
+  margin:0 auto;
+}
+.medium{
+
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  margin-top: ;
+  padding: 0 auto;
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .middle{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .form-bg{
+      width: 100%;
+    margin-top: 20%;
+    text-align: center;
+    display: block;
+    height: 335px;
+    background-color: #eaf0f8;
+    border-radius: 15px;
+    box-shadow: 5px 10px #d6dbe3;
+  }
+  .button{
+    border-color: white;
+  }
+  .buttons{
+    padding-top: 20% ;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 224px;
+    border-color: white;
+  }
+  .neo-btn{
+      height: 200px;
+    padding: 10px;
+    border-color: white;
+    display: block;
+    background-color: #eaf0f8;
+    border-radius: 10px;
+    border: black;
+    box-shadow: 5px 10px #d6dbe3;
+  }
+  .neo-img{
+    width: 200px;
+    height: 190px;
+    padding: 0;
+      border:white;
+      border-radius: 10px;
+      background-color:#EBF0F8;
+      z-index: 999;
+      box-shadow: 5px 10px #d6dbe3;
+
+  }
+  .btn-form{
+    color: white;
+    padding:10px 0;
+    margin: 2px 0;
+    border: none;
+    border-color: white;
+    cursor: pointer;
+  }
+  .a-icons{
+    width: 60%;
+    position: relative;
+    top: -150%;
+  }
+  .h-icons{
+      width: 90%;
+      position: relative;
+      top: -25%;
+  }
+  .very-top{
+      position: relative;
+      top: -10%;
+  }
+  .first{
+    margin-bottom: 5%;
+  }
+  .top{
+      position: relative;
+      top: 10%;
+  }
+  .down{
+      position: relative;
+      bottom:-75%;
+  }
+  .bottom{
+    margin-top: 15%;
+  }
+  .bottom-more{
+      margin-top: 30%;
+  }
+  .line{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .left{
+    display: flex;
+    justify-content: start; 
+  }
+  .right{
+      display: flex;
+      justify-content: end;
+  }
+  .column{
+      display: flex;
+      flex-direction: column;
+  }
+  .icon-ends{
+      display: flex;
+      justify-content: space-between;
+  }
+  .icon-left{
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  .icon-size{
+      font-size: 26px;
+  }
+  .icon-large{
+      font-size: 100px;
+  }
+  .larger-txt{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .medium-txt{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .small-txt{
+    font-size: 10px;
+    font-weight:500 ;
+    color: black;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .container {
+    padding: 16px;
+  }
+  input { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    outline: none;
+    border: none;
+    background-color:#EBF0F8 ;
+  }
+  .person{
+      height: 50px;
+  }
+  #myLinks{
+    background-color: #EBF0F8;
+    border: 3px;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .settings .set-closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  .closebtn,.set-closebtn{
+      font-size:36px;
+      color: grey;
+      z-index: 4;
+  }
+  #x-button,#sbutton{
+    padding-top: 10px;;
+  }
+  .side-links{
+    padding:20px;
+}
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #EBF0F8; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }}
+  /* The side settings menu */
+  .settings {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .img-playlist{
+      background-image: url('assets/playlist.jpg');
+      background-size: cover;
+      height: 200px;
+      overflow: hidden;
+    }
+    
+    #circle {
+        position: relative;
+        top: -20px;
+        width: 90px;
+        height: 90px;
+        background: #EBF0F8;
+        border-radius: 50%;
+        padding: 0;
+      }

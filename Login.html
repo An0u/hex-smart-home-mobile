@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <title>Hex</title>
+  </head>
+  <body>
+    <figure class="hide">
+        <img class="medium nav justify-content-center" src="assets/Hex.svg" >
+      </figure> 
+      <!-- Sidenav -->
+      <div id="mySidenav" class="sidenav column">
+            <a id="x-button" href="javascript:void(0)" class="closebtn larger-text" onclick="closeNav()">&times;</a>
+                <img class="medium nav justify-content-center hide" src="assets/Hex.svg" >
+              <hr>
+            <div class="side-links column">
+            <a href="#news" class="larger-txt side-links">
+                <i class="fa fa-user " aria-hidden="true"></i>My Profile</a>
+            <a href="#contact" class="larger-txt side-links" >
+                <i class="fa fa-home" aria-hidden="true"></i>
+                Home</a>
+            <a href="#about"class="larger-txt side-links">
+                <i class="fa fa-info" aria-hidden="true"></i>
+                Help</a> 
+            <a href="#about"class="larger-txt side-links">
+                <i class="fa fa-reply" aria-hidden="true"></i>
+                Contact Us</a> 
+                <hr>
+            <a href="#contact"class="larger-txt side-links ">
+                <!-- Toggle On/Off  -->
+                <!-- <i class="fa fa-moon-o" aria-hidden="true"></i> -->
+                <a href="#" class="larger-txt">Dark Mode</i><i class="fa fa-toggle-off toggle icon-size"></i>
+                
+            </a>
+            <a href="#about"class="larger-txt side-links">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>Sign Out</a> 
+        </div>
+      </div>
+            <!-- Settings -->
+            <div id="mySettings" class="settings column">
+                <a id="s-button" href="javascript:void(0)" class="set-closebtn larger-text" onclick="closeSettings()">&times;</a>
+                <img class="medium nav justify-content-center hide" src="assets/Hex.svg" >
+                <hr>
+                <div class="side-links column">
+                <a href="#news" class="larger-txt side-links">
+                    <i class="fa fa-pencil " aria-hidden="true"></i>Me</a>
+                <a href="#contact" class="larger-txt side-links" >
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                   Notifications</a>
+                <a href="#about"class="larger-txt side-links">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    General</a> 
+                <a href="#about"class="larger-txt side-links">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Account</a> 
+                    <hr>
+                <a href="#contact"class="larger-txt side-links">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    Privacy</a>
+                <a href="#about"class="larger-txt side-links">
+                    <i class="fa fa-ban" aria-hidden="true"></i>Block</a> 
+                    <a href="#about"class="larger-txt side-links">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>Help</a> 
+            </div>
+          </div>
+    <section class="bottom">
+      <div class="container1 first justify-content-center hide">
+          <div class="person middle very-top">
+            <p >Mood music and lighting.</p>
+            <!-- <i class="fa fa-user-circle icon-large  " aria-hidden="true"></i> -->
+            <img class="avatar" src="assets/avi-richards-yzLvKZuK4hs-unsplash.jpg">
+            
+            <div class="a-icons icon-ends icon-middle middle ">
+
+              <i class="fa fa-music  icon-size "></i>
+              <i class="fa fa-lightbulb-o icon-size "></i>
+            </div>
+              <!-- <p class="medium.txt bottom ">John Doe</p> -->
+          </div>
+
+
+
+          <div class="main form-bg hide ">
+
+              <h2 class="first first" style="padding-top: 10%;">Playlists</h2>
+              <div class="neo-img middle first img-playlist">
+                <!-- <img src="assets/ian-espinosa-rX12B5uX7QM-unsplash.jpg" class="img-playlist"> -->
+                
+
+                <div class="bar down">
+                    <i class="fa fa-random medium-txt" aria-hidden="true"></i>
+                    <i class="fa fa-backward medium-txt" aria-hidden="true"></i>
+                    <i class="fa fa-play-circle-o icon-size" aria-hidden="true"></i>
+                    <i class="fa fa-forward medium-txt" aria-hidden="true"></i>
+                    <i class="fa fa-repeat medium-txt" aria-hidden="true"></i>
+    
+                  </div>
+              </div>
+              <div class="h-icons middle icon-ends">
+                <i class="fa fa-caret-left icon-size " aria-hidden="true"></i>
+                    <i class="fa fa-caret-right icon-size " aria-hidden="true">
+                    </i>             
+              </div>
+
+          </div>
+          <div class=" bottom middle icon-ends">
+            <span onclick="openNav()"><i id="ham-menu"class="fa fa-bars icon-size" aria-hidden="true"></i></span>
+            <span id="circle" class=""><a href="colour.html"><i class="fa fa-pencil icon-size " style="position: relative; top:30px;" aria-hidden="true"></a></i></span>
+            <span onclick="openSettings()"><i id="cog"class="fa fa-cog icon-size" aria-hidden="true"></i></span>
+          </div>
+      </div>
+      
+    </section>
+    <script>
+                $(function() {
+            $('a').click(function() {
+                $(this).find('.toggle').toggleClass('fa-toggle-off fa-toggle-on');
+            });
+        });
+        // function toggleOn(){
+        //     document.getElementById("on").style.display = "block";
+        // }
+        // function toggleOff(){
+        //     document.getElementById("off").style.display = "none";
+        // }
+
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("x-button").style.display = "block";
+        document.getElementById("ham-menu").style.display = "none";
+        }
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("x-button").style.display = "none";
+        document.getElementById("ham-menu").style.display = "block";
+        }
+
+        function openSettings() {
+        document.getElementById("mySettings").style.width = "250px";
+        document.getElementById("s-button").style.display = "block";
+        document.getElementById("cog").style.display = "none";
+        }
+        function closeSettings() {
+        document.getElementById("mySettings").style.width = "0";
+        document.getElementById("s-button").style.display = "none";
+        document.getElementById("cog").style.display = "block";
+        }
+
+
+        </script>
+    <!-- <section>
+      <div class="container1">
+          <div class="main-message ">
+              <p class="text-center">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+          </div>
+        </div>
+    </section> -->
+  </body>
+</html>

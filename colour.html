@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="colour.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.umd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css">
+    <title>Hex</title>
+</head>
+
+<body>
+    <figure class="hide">
+        <img class="medium nav justify-content-center" src="assets/Hex.svg" alt="">
+    </figure>
+    <section class="bottom">
+        <div class="container1 first justify-content-center">
+            <a href="Login.html"><i class="fa fa-arrow-left larger-txt" aria-hidden="true">Back</i></a>
+        </div>
+    </section>
+    <!-- Sidenav -->
+    <div id="mySidenav" class="sidenav column">
+        <a id="x-button" href="javascript:void(0)" class="closebtn larger-text" onclick="closeNav()">&times;</a>
+        <img class="medium nav justify-content-center hide" src="assets/Hex.svg" alt="">
+        <hr>
+
+        <div class="side-links column">
+            <a href="#news" class="larger-txt side-links">
+                <i class="fa fa-user " aria-hidden="true"></i>My Profile</a>
+            <a href="#contact" class="larger-txt side-links">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                Home</a>
+            <a href="#about" class="larger-txt side-links">
+                <i class="fa fa-info" aria-hidden="true"></i>
+                Help</a>
+            <a href="#about" class="larger-txt side-links">
+                <i class="fa fa-reply" aria-hidden="true"></i>
+                Contact Us</a>
+            <hr>
+            <a href="#contact" class="larger-txt side-links "></a>
+            <!-- Toggle On/Off  -->
+            <!-- <i class="fa fa-moon-o" aria-hidden="true"></i> -->
+            <a href="#" class="larger-txt">Dark Mode<i class="fa fa-toggle-off toggle icon-size"></i></a>
+            <a href="#about" class="larger-txt side-links">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>Sign Out</a>
+        </div>
+    </div>
+    <!-- Settings -->
+    <div id="mySettings" class="settings column">
+        <a id="s-button" href="javascript:void(0)" class="set-closebtn larger-text"
+            onclick="closeSettings()">&times;</a>
+        <img class="medium nav justify-content-center hide" src="assets/Hex.svg" alt="">
+        <hr>
+        <div class="side-links column">
+            <a href="#news" class="larger-txt side-links">
+                <i class="fa fa-pencil " aria-hidden="true"></i>Me</a>
+            <a href="#contact" class="larger-txt side-links">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                Notifications</a>
+            <a href="#about" class="larger-txt side-links">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                General</a>
+            <a href="#about" class="larger-txt side-links">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Account</a>
+            <hr>
+            <a href="#contact" class="larger-txt side-links">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                Privacy</a>
+            <a href="#about" class="larger-txt side-links">
+                <i class="fa fa-ban" aria-hidden="true"></i>Block</a>
+            <a href="#about" class="larger-txt side-links">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>Help</a>
+        </div>
+    </div>
+    <section class="bottom">
+        <div class="container1 first justify-content-center hide">
+
+            <div class="bar">
+                <div class="bar line bottom">
+                    <button id="hvbtn" class="neo-btn medium-txt upper">
+                        Energy
+                    </button>
+                    <button id="hvbtn2" class="neo-btn medium-txt upper">
+                        Colour
+                    </button>
+
+                </div>
+
+
+                    <div id="app">
+                        <h2 class="pad medium-txt upper">{{ msg }}</h2>
+                        <hr>
+                        <color-picker v-bind="color" @input="onInput"></color-picker>
+
+                        <!-- <pre>{{ color }}</pre> -->
+                    </div>
+
+                    <script>
+                        var ColorPicker = window.VueColorPicker;
+
+                        var app = new Vue({
+                            el: '#app',
+                            components: {
+                                ColorPicker: ColorPicker
+                            },
+                            data: {
+                                msg: 'Choose your Lighting Colour',
+                                color: {
+                                    hue: 50,
+                                    saturation: 100,
+                                    luminosity: 50,
+                                    alpha: 1,
+
+                                },
+                            },
+                            methods: {
+                                onInput: function (hue) {
+                                    this.color.hue = hue;
+                                }
+                            }
+                        });
+                    </script>
+
+                </body>
+
+</html>
